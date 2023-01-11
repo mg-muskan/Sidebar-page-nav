@@ -1,0 +1,134 @@
+.user-panel {
+    /* margin-top: 100px; */
+    width: 100%;
+    font-family: 'Roboto Condensed';
+}
+.card-body {
+    border-radius: 0;
+}
+.card-body a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.navigation li a {
+    color: #000;
+    font-size: 15px;
+    padding: 12px 20px !important;
+    margin: 0px 50px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+.navigation li a:hover,
+.navigation li.active a {
+    background: #ffa502;
+    color: #000;
+    transition: all 0.5s ease-in-out;
+}
+
+.card-h {
+    height: 90vh;
+    overflow-y: auto;
+    z-index: 1;
+    margin-left: -300px;
+    transition: all 0.5s;
+}
+.card-h.active {
+    margin-left: 0;
+}
+
+/* Caset-down */
+button i {
+    transition: transform 0.4s;
+}
+button i.rotate {
+    transform: rotate(-180deg);
+}
+
+/* Cross Bar */
+#openSidebarMenu:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input#openSidebarMenu{
+    display: none;
+}
+.sidebarIconToggle {
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    z-index: 99;
+    top: 22px;
+    left: 15px;
+    transition: all 0.3s;
+    cursor: pointer; 
+}
+.spinner {
+    height: 3px;
+    background-color: #000;
+    transition: all 0.3s;
+}
+.spinner.middle ,
+.spinner.bottom{
+    margin-top: 3px;
+}
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.middle {
+    opacity: 0;
+}
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.top {
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.bottom {
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+
+.graphbox {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+.heading {
+    font-weight: 600;
+    margin: 5px;
+}
+
+.rest_body {
+    /* display: inline; */
+    justify-content: center;
+}
+
+.button {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 16px;
+    /* padding-right: 8px; */
+    background-color: #4070f4;
+    border-radius: 6px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn {
+    color: #fff;
+}
+.button:hover {
+    /* background-color: teal; */
+    /* background-color: #45cac3; */
+    background-color: rgb(108, 223, 225);
+}
